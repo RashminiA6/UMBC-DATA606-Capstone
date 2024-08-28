@@ -6,24 +6,24 @@
 **Phone:** +1 667-406-6370  
 **Email:** rashmia1@umbc.edu  
 
----
+----
 
-## **Professional Summary**
-
-Highly motivated Data professional with 5.4 years of experience in Data Analysis and Oracle ERP. Currently pursuing a master’s degree in Data Science; possesses a strong foundation in Data Analysis, Data Visualization, Machine Learning, and Predictive Modeling. Proficient in Python, SQL, PLSQL, and advanced data visualization tools – Power BI, Tableau.
+- Highly motivated Data professional with 5.4 years of experience in Data Analysis and Oracle ERP.
+- Currently pursuing a master’s degree in Data Science; possesses a strong foundation in Data Analysis, Data Visualization, Machine Learning, and Predictive Modeling.
+- Proficient in Python, SQL, PLSQL, and advanced data visualization tools – Power BI, Tableau.
 
 ---
 
 ## **Education**
 
-### **University of Maryland Baltimore County**  
+**University of Maryland Baltimore County**  
 *Master of Professional Studies in Data Science*  
 *January 2023 – December 2024*  
 GPA: 3.96/4.00
 
 - Relevant coursework: Data Science using Python, Predictive Modeling, Data Analysis and Machine Learning, Big Data Processing, Data Management, Management, Leadership, and Communication, Project Management
 
-### **JNT University, Hyderabad, India**  
+**JNT University, Hyderabad, India**  
 *Bachelor of Technology in Electronics and Communication Engineering*  
 *July 2013 – May 2017*
 
@@ -44,7 +44,6 @@ GPA: 3.96/4.00
 
 ## **Certifications**
 
-- Python for Data Science (IBM)
 - Introduction to SQL & PLSQL (Oracle)
 - E R12 Interfaces and API’s (IBM)
 - Oracle Database: Oracle Developer: Reports & BI Publisher (Oracle)
@@ -99,7 +98,7 @@ GPA: 3.96/4.00
 - Worked on Financial modules GL and FA, performing GL Functional Setups and developing procedures, packages, triggers, and cursors in PL/SQL.
 - Developed and reviewed SQL queries in Tableau Desktop for data validation.
 - Managed database operations, optimized performance, and ensured data integrity.
-- Modified reports using Kibana and documented solution enhancement requests.
+- Modified reports using Oracle reports and documented solution enhancement requests.
 
 ---
 

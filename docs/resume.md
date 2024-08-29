@@ -1,6 +1,6 @@
 # **RASHMINI AKKAPALLY**
 
-![RASHMINI](headshot.jpg)
+![RASHMINI](rashmipic.jpg)
 
 **LinkedIn:** [linkedin.com/in/rashminiakkapally](http://www.linkedin.com/in/rashminiakkapally)  
 **Phone:** +1 667-406-6370  

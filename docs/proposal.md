@@ -1,5 +1,5 @@
 ## 1. Title and Author
-## Plant Disease Detection Using CNN.
+## Plant Disease Detection.
 - Prepared for: UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang
 
 - Author Name: Rashmini Akkapally

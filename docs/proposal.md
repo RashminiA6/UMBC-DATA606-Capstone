@@ -1,23 +1,16 @@
-# Project Title: 
-**Plant Disease Detection Using CNN**
+## 1. Title and Author
+## Plant Disease Detection Using CNN.
+- Prepared for: UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang
 
-### Prepared for:  
-UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang
+- Author Name: Rashmini Akkapally
 
-### Author Name:  
-Rashmini Akkapally
+- GitHub Repository Link: [GitHub Repo](https://github.com/RashminiA6/UMBC-DATA606-Capstone)
 
-### GitHub Repository Link:  
-[GitHub Repo](https://github.com/RashminiA6/UMBC-DATA606-Capstone)
+- LinkedIn Profile Link: [LinkedIn Profile](https://www.linkedin.com/in/rashminiakkapally/)
 
-### LinkedIn Profile Link:  
-[LinkedIn Profile](https://www.linkedin.com/in/rashminiakkapally/)
+- PowerPoint Presentation Link: [PowerPoint Presentation Link]
 
-### PowerPoint Presentation Link:  
-[PowerPoint Presentation Link]
-
-### YouTube Video Link:  
-[YouTube Video Link]
+- YouTube Video Link: [YouTube Video Link]
 
 ---
 

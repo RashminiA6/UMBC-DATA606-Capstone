@@ -123,12 +123,12 @@ The dataset is divided into **38 different plant leaf categories**, representing
 
 ## Data Visualization
 
-### 1. **Image Distribution by Category**
+### **Image Distribution by Category**
 A bar plot was generated to visualize the distribution of images per category using Seaborn and Matplotlib.
 
 ![Image Distribution](imagedistribution.png) 
 
-### 2. **Sample Images**
+### **Sample Images**
 Some sample images from the dataset were displayed to provide a visual understanding of the data.
 
 ![Sample Images](sampleimages.png)

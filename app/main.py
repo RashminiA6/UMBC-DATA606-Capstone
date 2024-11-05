@@ -10,8 +10,13 @@ import os
 model_path = os.path.join(os.path.dirname(__file__), 'plant_disease_cnnmodel.h5')
 model = tf.keras.models.load_model(model_path)
 # Load the class names
-with open('class_indices.json', 'r') as f:
-    class_indices = json.load(f)
+# Load the class names
+class_indices_path = os.path.join(os.path.dirname(__file__), 'class_indices.json')
+try:
+    with open(class_indices_path, 'r') as f:
+        class_indices = json.load(f)
+except FileNotFoundError:
+    print(f"Error: The file '{class_indices_path}' was not found. Please check the path.")
 
 # Reverse the class_indices to map indices back to their corresponding class labels
 index_to_class = {v: k for k, v in class_indices.items()}

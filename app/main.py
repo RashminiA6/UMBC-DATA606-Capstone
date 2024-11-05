@@ -38,7 +38,16 @@ def predict_disease(image):
     confidence = np.max(predictions[0])
     return predicted_category_name, confidence
 
-st.image("plantsheading.png", use_column_width=True)
+# Construct the path to the image
+image_path = os.path.join(os.path.dirname(__file__), 'plantsheading.png')
+
+# Attempt to load the image
+try:
+    st.image(image_path, use_column_width=True)
+except Exception as e:
+    st.error(f"Error loading image: {e}")
+    print(f"Failed to load image from {image_path}: {e}")
+
 # Page title and description with emojis on the same line
 #st.title("🌿 Plant Disease Detection 🌿") 
 # Description of the app

@@ -7,9 +7,8 @@ from PIL import Image
 import os
 
 # Load the saved model
-model_path = os.path.join(os.getcwd(), 'plant_disease_cnnmodel.keras')
+model_path = os.path.join(os.path.dirname(__file__), 'plant_disease_cnnmodel.h5')
 model = tf.keras.models.load_model(model_path)
-
 # Load the class names
 with open('class_indices.json', 'r') as f:
     class_indices = json.load(f)

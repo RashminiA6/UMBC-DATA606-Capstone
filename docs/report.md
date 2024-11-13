@@ -151,7 +151,7 @@ The dataset was split as follows:
 
 This split ensures that the model's performance is based on generalization rather than memorization.
 
-##5. Model Training
+## 5. Model Training
 
 During the project, both a custom CNN model and a ResNet model were implemented and evaluated for plant disease detection.
 

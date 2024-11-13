@@ -8,7 +8,7 @@
 
 - LinkedIn Profile Link: [LinkedIn Profile](https://www.linkedin.com/in/rashminiakkapally/)
 
-- PowerPoint Presentation Link: [PowerPoint Presentation Link]
+- PowerPoint Presentation Link: [PowerPoint Presentation Link](https://github.com/RashminiA6/UMBC-DATA606-Capstone/blob/main/docs/finalppt.pptx)
 
 - YouTube Video Link: [YouTube Video Link]
 
@@ -151,10 +151,13 @@ The dataset was split as follows:
 
 This split ensures that the model's performance is based on generalization rather than memorization.
 
+#5. Model Training
 
-## Model Architecture
+During the project, both a custom CNN model and a ResNet model were implemented and evaluated for plant disease detection.
 
-### CNN Architecture
+Used **Google Colab Pro** to leverage cloud-based GPUs for faster model training and ** Visual Studio Code** as my primary coding environment for development of Streamlit web app.
+
+## CNN Architecture
 
 A Convolutional Neural Network (CNN) was built using the Keras library. The architecture consists of the following layers:
 
@@ -164,8 +167,7 @@ A Convolutional Neural Network (CNN) was built using the Keras library. The arch
 - **Dense Layer**: A fully connected layer that learns complex representations from the extracted features.
 - **Output Layer**: Uses a softmax activation function to output probabilities for the 38 classes.
 
-
-## Model Compilation
+### Model Compilation
 
 The model was compiled using:
 
@@ -173,25 +175,31 @@ The model was compiled using:
 - **Loss Function**: Categorical Crossentropy (suitable for multi-class classification tasks)
 - **Metrics**: Accuracy was used to monitor performance during training and validation.
 
-## Training Process
+### CNN Training Process
 
-The model was trained for **15 epochs** using the training dataset, with the validation dataset used to monitor generalization. Over time, the model's accuracy improved, achieving:
+
+The model was trained using the `fit` method for 20 epochs. It utilized:
+
+- **Training Data Generator**: `train_generator` for feeding batches of training images.
+- **Validation Data Generator**: `val_generator` for monitoring validation performance.
+
+During training, the model adjusted its weights to minimize the categorical crossentropy loss, improving its accuracy in classifying plant diseases. Validation accuracy and loss were tracked to ensure the model generalized well without overfitting.
+
+### Training Details
+	
+- **Epochs**: 20
+- **Training Time per Epoch**: ~200 seconds 
+- **Final Training Accuracy**: 94.12%
+- **Final Validation Accuracy**: 94.02%
+- **Final Validation Loss**: 0.1857
 
 ![Epochs](cnnepochs.png)
 
-- **Training Accuracy**: 93.82%
-- **Validation Accuracy**: 94.58% (by the 15th epoch)
-
-
-## CNN Model Performance
-
-The model achieved the following performance on the validation set:
-
-- **Final Validation Accuracy**: 94.16%
-- **Final Validation Loss**: 0.1883
-
-
-## Performance Metrics Visualization
+- **Performance Improvements**:
+  - Accuracy increased steadily for both training and validation sets.
+  - Loss decreased, indicating effective learning.
+  
+### Performance Metrics Visualization for CNN
 
 The training and validation accuracy and loss were plotted over the epochs using Matplotlib to monitor the model's learning behavior.
 
@@ -199,10 +207,64 @@ The training and validation accuracy and loss were plotted over the epochs using
 
 ![Training/Validation loss](cnnmodelloss.png)
 
+## ResNet Model Performance
 
-## Sample Predictions
+### Training Details
 
-The model's prediction capabilities were tested by passing a sample image through the model after preprocessing it, and the predicted class was displayed.
+- **Epochs**: 40
+- **Training Time per Epoch**: ~259 seconds (ResNet is computationally intensive).
+- **Final Training Accuracy**: 26.98%
+- **Final Validation Accuracy**: 32.23%
+- **Final Validation Loss**: 2.4347
+
+### Performance Analysis
+
+Although ResNet is a sophisticated architecture with residual connections designed to handle deeper networks, it struggled to achieve high accuracy in this project:
+
+- **Validation Accuracy**: Peaked at 32.23%, which is significantly lower than the CNN model.
+- **Loss**: The validation loss steadily improved but remained relatively high (2.43) compared to the CNN.
+
+Given the superior accuracy and efficiency of the *CNN model*, it was chosen for deployment. However, the ResNet model provided valuable insights into the complexity of feature extraction and highlighted the importance of dataset suitability for deep architectures.
+
+---
+## 6. Application of the Trained Models
+
+Built an user-friendly Web application using Streamlit, the app allows users to upload an image of a plant leaf. A Convolutional Neural Network (CNN) model then analyzes the image to predict the presence of any disease, providing a confidence score to indicate the reliability of the diagnosis. Beyond detection, the app offers customized care tips for each identified disease, equipping users with actionable steps to manage and protect their crops effectively. This dual-purpose functionality—combining disease detection with practical advice—makes the app a valuable resource for improving plant health and promoting sustainable agriculture.
+
+![webapp1](webapp1.png)
+![webapp2](webapp2.png)
+---
+## 7. Conclusion  
+
+In conclusion, this project highlights how CNNs can be used effectively to detect plant diseases and assist in agriculture. The model’s high accuracy and ease of use make it a reliable tool for early disease detection, potentially reducing crop losses and supporting food security. The app’s design focuses on accessibility, making it an ideal solution for farmers and plant enthusiasts who need quick and reliable plant health assessments.
+
+### Limitations
+- **Dataset Constraints**: The model relies on the PlantVillage dataset, which may not cover all plant species or disease variations found in diverse agricultural settings.
+- **Generalization Challenges**: Performance may vary under real-world conditions due to differences in image quality, lighting, and environmental factors.
+- **Computational Demand**: More advanced models like ResNet, while sophisticated, demand significant computational resources and showed lower performance on this specific dataset compared to CNN.
+
+### Lessons Learned
+- **Data Quality Matters**: Effective deep learning models require high-quality, diverse datasets for reliable results.
+- **Model Selection**: Simpler CNN architectures sometimes outperform deeper networks (like ResNet) when training data or computational resources are limited.
+- **User-Centric Design**: Including an intuitive interface and actionable care recommendations increases the app's value, making it accessible for users with varied technical backgrounds.
+
+### Future Research Directions
+- **Dataset Expansion**: Broaden the dataset to include more plant species and disease types for better coverage and accuracy.
+- **Model Optimization**: Enhance model efficiency for faster predictions, enabling mobile and offline deployment for real-time, field-ready assessments.
+- **Large Language Model (LLM) Integration**: Integrate an LLM to provide users with a conversational interface, allowing them to ask questions, get disease explanations, and receive tailored plant care advice—turning the app into a comprehensive agricultural support tool.
+
+---
+## 8. References  
+
+1. PlantVillage Dataset on Kaggle: [Link](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset?select=segmented)
+2. Streamlit Documentation for Web Application Development: [Link](https://docs.streamlit.io/)
+3. Hassan SM, Maji AK, Jasiński M, Leonowicz Z, Jasińska E. Identification of Plant-Leaf Diseases Using CNN and Transfer-Learning Approach. Electronics. 2021; 10(12):1388. https://doi.org/10.3390/electronics10121388
+4. M. Shobana et al., "Plant Disease Detection Using Convolution Neural Network," 2022 International Conference on Computer Communication and Informatics (ICCCI), Coimbatore, India, 2022, pp. 1-5, doi: 10.1109/ICCCI54379.2022.9740975.
+5. Web App Development Made Simple with Streamlit (2024) Google Books. Available at: https://books.google.com/books?id=pLfuEAAAQBAJ&dq=webapp+using+streamlit&lr=&source=gbs_navlinks_s.
+
+Thankyou
+~Rashmini Akkapally
+
 
 
 

@@ -234,7 +234,7 @@ Given the superior accuracy and efficiency of the *CNN model*, it was chosen for
 Built an user-friendly Web application using Streamlit, the app allows users to upload an image of a plant leaf. A Convolutional Neural Network (CNN) model then analyzes the image to predict the presence of any disease, providing a confidence score to indicate the reliability of the diagnosis. Beyond detection, the app offers customized care tips for each identified disease, equipping users with actionable steps to manage and protect their crops effectively. This dual-purpose functionality—combining disease detection with practical advice—makes the app a valuable resource for improving plant health and promoting sustainable agriculture.
 
 ![webapp1](webapp1.png)
-![webapp2](webapp2.png)
+![webapp2](webapp2.png) ![webapp3](webapp3.png)
 ---
 ## 7. Conclusion  
 

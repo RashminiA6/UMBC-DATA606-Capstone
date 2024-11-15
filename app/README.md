@@ -1,4 +1,4 @@
-This folder consists of all the files realted to Streamlit webapp
+This folder contains all the files realted to Streamlit webapp
 
 - main.py is the primary python code used for the development of streamlit webapp.
 

@@ -10,7 +10,8 @@
 
 - PowerPoint Presentation Link: [PowerPoint Presentation Link](https://github.com/RashminiA6/UMBC-DATA606-Capstone/blob/main/docs/finalppt.pptx)
 
-- YouTube Video Link: [YouTube Video Link]
+- YouTube Video Link: [YouTube Video Link](https://www.youtube.com/watch?v=EBwuI5O-uoM)
+- Streamlit Web App : [Streamlit Webapp Link](https://plantdiseasedetection-rashmini-capstone.streamlit.app/)
 
 ---
 
@@ -232,6 +233,7 @@ Given the superior accuracy and efficiency of the *CNN model*, it was chosen for
 ## 6. Application of the Trained Models
 
 Built an user-friendly Web application using Streamlit, the app allows users to upload an image of a plant leaf. A Convolutional Neural Network (CNN) model then analyzes the image to predict the presence of any disease, providing a confidence score to indicate the reliability of the diagnosis. Beyond detection, the app offers customized care tips for each identified disease, equipping users with actionable steps to manage and protect their crops effectively. This dual-purpose functionality—combining disease detection with practical advice—makes the app a valuable resource for improving plant health and promoting sustainable agriculture.
+- [Streamlit Webapp Link](https://plantdiseasedetection-rashmini-capstone.streamlit.app/)
 
 ![webapp1](webapp1.png)
 ![webapp2](webapp2.png) ![webapp3](webapp3.png)
